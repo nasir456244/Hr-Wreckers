@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="HR Wreckers - Car wreckers buying unwanted cars and selling affordable used car parts in Brisbane, Logan, Gold Coast & Sunshine Coast. Get the best price for your car today!">
     <meta name="keywords" content="Car wreckers Brisbane, Car wreckers Logan, Car wreckers Gold Coast, Car wreckers Sunshine Coast, Sell my car Brisbane, Sell my car Logan, Sell my car Gold Coast, Sell my car Sunshine Coast, Buy cheap car parts Brisbane, Buy cheap car parts Logan, Buy cheap car parts Sunshine Coast, HR Wreckers Brisbane">
-<link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="styles.css"></noscript>
+    <title>HR Wreckers | Car Wreckers & Used Car Parts Brisbane, Logan, Gold Coast, Sunshine Coast</title>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -59,44 +59,49 @@
 }
 </script>
 
-    <title>HR Wreckers | Car Wreckers & Used Car Parts Brisbane, Logan, Gold Coast, Sunshine Coast</title>
-
     <!-- Resource Hints -->
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link rel="dns-prefetch" href="https://kit.fontawesome.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Preload hero image (LCP) -->
-    <link rel="preload" as="image" href="/hero-background.png">
-
-    <!-- Critical CSS Inlined -->
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+    
+    <!-- Preload critical images -->
+    <link rel="preload" as="image" href="/hero-background.webp" media="(min-width: 768px)">
+    <link rel="preload" as="image" href="/hero-background-mobile.webp" media="(max-width: 767px)">
+    
+    <!-- Critical CSS Inlined and Optimized -->
     <style>
-        /* Critical Above-the-fold CSS */
+        /* Critical Above-the-fold CSS - Optimized */
         *{margin:0;padding:0;box-sizing:border-box}
-        body{font-family:'Roboto',sans-serif;line-height:1.6;color:#333;background-color:#f8f8f8}
+        body{font-family:'Roboto',system-ui,-apple-system,sans-serif;line-height:1.6;color:#333;background:#f8f8f8;font-display:swap}
         .container{width:90%;max-width:1200px;margin:0 auto;padding:0 15px}
         h1,h2,h3,h4{margin-bottom:1rem;line-height:1.2}
         h2{font-size:2rem;color:#1a52a0;text-align:center;margin-bottom:2rem}
         p{margin-bottom:1rem}
         a{text-decoration:none;color:inherit}
-        header{background-color:#1a52a0;color:white;padding:1rem 0;box-shadow:0 2px 10px rgba(0,0,0,0.1)}
+        header{background:#1a52a0;color:#fff;padding:1rem 0;box-shadow:0 2px 10px rgba(0,0,0,.1)}
         header .container{display:flex;justify-content:space-between;align-items:center}
-        .logo h1{font-size:1.8rem;margin-bottom:0.2rem}
-        .logo p{font-size:0.9rem;margin-bottom:0}
+        .logo h1{font-size:1.8rem;margin-bottom:.2rem}
+        .logo p{font-size:.9rem;margin-bottom:0}
         .contact-info{display:flex;flex-direction:column}
-        .contact-info a{color:white;margin-bottom:0.5rem;font-weight:bold;transition:color 0.3s ease}
+        .contact-info a{color:#fff;margin-bottom:.5rem;font-weight:700;transition:color .3s ease}
         .contact-info a:hover{color:#f8d100}
-        .hero{background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('/hero-background.png') no-repeat center center/cover;color:white;padding:5rem 0;text-align:center}
+        .hero{background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url('/hero-background.webp') no-repeat center center/cover;color:#fff;padding:5rem 0;text-align:center;min-height:60vh;display:flex;align-items:center}
         .hero-content{max-width:800px;margin:0 auto}
-        .hero h1{font-size:2.5rem;color:white;margin-bottom:1rem}
+        .hero h1{font-size:2.5rem;color:#fff;margin-bottom:1rem}
         .hero p{font-size:1.2rem;margin-bottom:2rem}
         .cta-buttons{display:flex;justify-content:center;gap:1rem}
-        .btn{display:inline-block;padding:0.8rem 1.5rem;border-radius:4px;font-weight:bold;text-align:center;transition:all 0.3s ease;cursor:pointer}
-        .btn-primary{background-color:#f8d100;color:#333}
-        .btn-secondary{background-color:#1a52a0;color:white}
-        @media (max-width:768px){
+        .btn{display:inline-block;padding:.8rem 1.5rem;border-radius:4px;font-weight:700;text-align:center;transition:all .3s ease;cursor:pointer;border:0;text-decoration:none}
+        .btn-primary{background:#f8d100;color:#333}
+        .btn-secondary{background:#1a52a0;color:#fff}
+        .btn:focus{outline:2px solid #fff;outline-offset:2px}
+        .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+        @media (max-width:767px){
+            .hero{background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url('/hero-background-mobile.webp') no-repeat center center/cover}
             header .container{flex-direction:column;text-align:center}
             .logo{margin-bottom:1rem}
             .contact-info{flex-direction:column;align-items:center}
@@ -106,34 +111,38 @@
             .hero p{font-size:1rem}
         }
     </style>
-
-    <!-- Favicon -->
-    <link rel="icon" href="/favicon.png" type="image/png">
+    
+    <!-- Favicon with multiple sizes -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content="HR Wreckers - Car Wreckers Brisbane, Logan, Gold Coast & Sunshine Coast">
     <meta property="og:description" content="Sell your car for cash or buy used parts at HR Wreckers. Trusted car wreckers serving Brisbane, Logan, Gold Coast & Sunshine Coast. Fast service, fair prices.">
-    <meta property="og:image" content="/og-image.png">
-    <meta property="og:url" content="https://www.hrwreckers.com/">
+    <meta property="og:image" content="/og-image.webp"> 
+    <meta property="og:url" content="https://www.hrwreckers.com/"> 
     <meta property="og:type" content="website">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="/og-image.png">
+    <meta name="twitter:image" content="/og-image.webp"> 
     <meta name="twitter:title" content="HR Wreckers - Car Wreckers Brisbane, Logan, Gold Coast & Sunshine Coast">
     <meta name="twitter:description" content="Sell your car for cash or buy used parts at HR Wreckers. Trusted car wreckers serving Brisbane, Logan, Gold Coast & Sunshine Coast. Fast service, fair prices.">
 </head>
 <body>
+    <a href="#main-content" class="sr-only">Skip to main content</a>
+    
     <header>
         <div class="container">
             <div class="logo">
                 <h1>HR Wreckers</h1>
                 <p>Your Trusted Car Wreckers</p>
             </div>
-            <div class="contact-info">
-                <a href="tel:0437683165" class="phone"><i class="fas fa-phone"></i> 0437 683 165</a>
-                <a href="mailto:hrwrecking@gmail.com" class="email"><i class="fas fa-envelope"></i> hrwrecking@gmail.com</a>
-            </div>
+            <nav class="contact-info" role="navigation" aria-label="Contact Information">
+                <a href="tel:0437683165" class="phone" aria-label="Call HR Wreckers at 0437 683 165"><i class="fas fa-phone" aria-hidden="true"></i> 0437 683 165</a>
+                <a href="mailto:hrwrecking@gmail.com" class="email" aria-label="Email HR Wreckers"><i class="fas fa-envelope" aria-hidden="true"></i> hrwrecking@gmail.com</a>
+            </nav>
         </div>
     </header>
 
@@ -143,14 +152,18 @@
                 <h1>Serving Brisbane, Logan, Gold Coast & Sunshine Coast</h1>
                 <p>We buy unwanted cars at top prices and sell quality used car parts at affordable rates across South East Queensland</p>
                 <div class="cta-buttons">
-                    <a href="#sell" class="btn btn-primary">Sell Your Car</a>
-                    <a href="#buy" class="btn btn-secondary">Browse Car Parts</a>
+                    <a href="#sell" class="btn btn-primary" aria-describedby="sell-description">Sell Your Car</a>
+                    <a href="#buy" class="btn btn-secondary" aria-describedby="buy-description">Browse Car Parts</a>
+                </div>
+                <div class="sr-only">
+                    <p id="sell-description">Get cash for your unwanted vehicle with free removal</p>
+                    <p id="buy-description">Find quality used car parts at affordable prices</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <main>
+    <main id="main-content">
         <section id="about" class="about">
             <div class="container">
                 <h2>About HR Wreckers</h2>
@@ -161,10 +174,11 @@
                         <p>Our team of experienced professionals ensures every transaction is smooth, transparent, and satisfactory for our valued customers.</p>
                     </div>
                     <div class="about-image">
-                        <img src="workshop.png"
-                             alt="Clean and organized auto workshop at HR Wreckers with mechanics working"
-                             class="rounded-img"
-                             loading="lazy" width="600" height="400">
+                        <picture>
+                            <source srcset="/workshop.webp" type="image/webp">
+                            <source srcset="/workshop.avif" type="image/avif">
+                            <img src="/workshop.jpg" alt="Clean and organized auto workshop at HR Wreckers with mechanics working" class="rounded-img" loading="lazy" width="600" height="400" decoding="async">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -174,51 +188,54 @@
             <div class="container">
                 <h2>What Our Customers Say</h2>
                 <div class="testimonials-grid">
-                    <div class="testimonial">
+                    <article class="testimonial">
                         <div class="testimonial-content">
                             <p>"HR Wreckers gave me an amazing deal for my old Holden Commodore that had been sitting in my yard for years. Quick, professional, and they paid cash on the spot. Highly recommend!"</p>
                         </div>
                         <div class="testimonial-author">
-                            <img src="mark.jpg"
-                                 alt="Mark Thompson smiling beside his Holden Commodore"
-                                 class="testimonial-avatar"
-                                 loading="lazy" width="60" height="60">
+                            <picture>
+                                <source srcset="/mark.webp" type="image/webp">
+                                <source srcset="/mark.avif" type="image/avif">
+                                <img src="/mark.jpg" alt="Mark Thompson customer testimonial" class="testimonial-avatar" loading="lazy" width="60" height="60" decoding="async">
+                            </picture>
                             <div class="author-info">
                                 <h4>Mark Thompson</h4>
                                 <p>Brisbane, QLD</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="testimonial">
+                    </article>
+                    <article class="testimonial">
                         <div class="testimonial-content">
                             <p>"I needed a transmission for my Mitsubishi Triton, and HR Wreckers had exactly what I wanted. The part was in great condition, and saved me hundreds compared to buying new. Excellent service!"</p>
                         </div>
                         <div class="testimonial-author">
-                            <img src="sarah.jpg"
-                                 alt="Sarah Rodriguez holding a Mitsubishi Triton transmission"
-                                 class="testimonial-avatar"
-                                 loading="lazy" width="60" height="60">
+                            <picture>
+                                <source srcset="/sarah.webp" type="image/webp">
+                                <source srcset="/sarah.avif" type="image/avif">
+                                <img src="/sarah.jpg" alt="Sarah Rodriguez customer testimonial" class="testimonial-avatar" loading="lazy" width="60" height="60" decoding="async">
+                            </picture>
                             <div class="author-info">
                                 <h4>Sarah Rodriguez</h4>
                                 <p>Gold Coast, QLD</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="testimonial">
+                    </article>
+                    <article class="testimonial">
                         <div class="testimonial-content">
                             <p>"When my old Ford Ranger finally gave up, HR Wreckers made the entire process painless. Free pickup, instant cash, and they handled all the paperwork. These guys are professionals!"</p>
                         </div>
                         <div class="testimonial-author">
-                            <img src="david.jpg"
-                                 alt="David Williams standing by his old Ford Ranger"
-                                 class="testimonial-avatar"
-                                 loading="lazy" width="60" height="60">
+                            <picture>
+                                <source srcset="/david.webp" type="image/webp">
+                                <source srcset="/david.avif" type="image/avif">
+                                <img src="/david.jpg" alt="David Williams customer testimonial" class="testimonial-avatar" loading="lazy" width="60" height="60" decoding="async">
+                            </picture>
                             <div class="author-info">
                                 <h4>David Williams</h4>
                                 <p>Logan, QLD</p>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -228,14 +245,15 @@
                 <h2>Sell Your Car Today across South East Queensland</h2>
                 <div class="service-content">
                     <div class="service-image">
-                        <img src="sell-car.jpg"
-                             alt="Handshake as customer sells car for cash at HR Wreckers"
-                             class="rounded-img"
-                             loading="lazy" width="600" height="400">
+                        <picture>
+                            <source srcset="/sell-car.webp" type="image/webp">
+                            <source srcset="/sell-car.avif" type="image/avif">
+                            <img src="/sell-car.jpg" alt="Handshake as customer sells car for cash at HR Wreckers" class="rounded-img" loading="lazy" width="600" height="400" decoding="async">
+                        </picture>
                     </div>
                     <div class="service-text">
                         <h3>We Buy All Vehicles</h3>
-                        <ul>
+                        <ul role="list">
                             <li>Top dollar paid for unwanted cars</li>
                             <li>Free car removal service</li>
                             <li>All makes and models accepted</li>
@@ -244,7 +262,7 @@
                             <li>All paperwork handled for you</li>
                         </ul>
                         <p>Don't let your unwanted vehicle take up space or cost you money. Turn it into cash today with HR Wreckers, your trusted car buyers across Brisbane, Logan, Gold Coast, and Sunshine Coast.</p>
-                        <a href="tel:0437683165" class="btn btn-primary"><i class="fas fa-phone"></i> Call Us Now</a>
+                        <a href="tel:0437683165" class="btn btn-primary" aria-label="Call HR Wreckers now to sell your car"><i class="fas fa-phone" aria-hidden="true"></i> Call Us Now</a>
                     </div>
                 </div>
             </div>
@@ -256,7 +274,7 @@
                 <div class="service-content reverse">
                     <div class="service-text">
                         <h3>Quality Used Parts</h3>
-                        <ul>
+                        <ul role="list">
                             <li>Wide range of components for all makes and models</li>
                             <li>All parts thoroughly tested and inspected</li>
                             <li>Competitive prices</li>
@@ -265,13 +283,14 @@
                             <li>After-sales support</li>
                         </ul>
                         <p>Looking for reliable car parts that won't break the bank? Browse our selection of quality used parts at HR Wreckers. We pride ourselves on offering affordable components that have been thoroughly checked and prepared for installation. Serving Brisbane, Logan, Gold Coast, and Sunshine Coast.</p>
-                        <a href="https://www.facebook.com/share/1FAy7PM4hp/?mibextid=wwXlfr" target="_blank" class="btn btn-secondary">View Our Inventory on Facebook</a>
+                        <a href="https://www.facebook.com/share/1FAy7PM4hp/?mibextid=wwXlfr" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" aria-label="View HR Wreckers car parts inventory on Facebook (opens in new tab)">View Our Inventory on Facebook</a>
                     </div>
                     <div class="service-image">
-                        <img src="car-parts.jpg"
-                             alt="Quality used car parts including engines and transmissions on shelves at HR Wreckers workshop"
-                             class="rounded-img"
-                             loading="lazy" width="600" height="400">
+                        <picture>
+                            <source srcset="/car-parts.webp" type="image/webp">
+                            <source srcset="/car-parts.avif" type="image/avif">
+                            <img src="/car-parts.jpg" alt="Quality used car parts including engines and transmissions on shelves at HR Wreckers workshop" class="rounded-img" loading="lazy" width="600" height="400" decoding="async">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -283,42 +302,46 @@
                 <div class="contact-content">
                     <div class="contact-info-block">
                         <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                             <div>
                                 <h3>Visit Us</h3>
-                                <p>123 Wrecker Lane, Rocklea</p>
-                                <p>Brisbane, QLD 4106</p>
-                                <p>(Serving Brisbane, Logan, Gold Coast & Sunshine Coast)</p>
+                                <address>
+                                    123 Wrecker Lane, Rocklea<br>
+                                    Brisbane, QLD 4106<br>
+                                    (Serving Brisbane, Logan, Gold Coast & Sunshine Coast)
+                                </address>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <i class="fas fa-phone"></i>
+                            <i class="fas fa-phone" aria-hidden="true"></i>
                             <div>
                                 <h3>Call Us</h3>
-                                <p><a href="tel:0437683165">0437 683 165</a></p>
+                                <p><a href="tel:0437683165" aria-label="Call HR Wreckers">0437 683 165</a></p>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
                             <div>
                                 <h3>Email Us</h3>
-                                <p><a href="mailto:hrwrecking@gmail.com">hrwrecking@gmail.com</a></p>
+                                <p><a href="mailto:hrwrecking@gmail.com" aria-label="Email HR Wreckers">hrwrecking@gmail.com</a></p>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
                             <div>
                                 <h3>Facebook</h3>
-                                <p><a href="https://www.facebook.com/share/1FAy7PM4hp/?mibextid=wwXlfr" target="_blank" class="btn btn-facebook">Message Us</a></p>
+                                <p><a href="https://www.facebook.com/share/1FAy7PM4hp/?mibextid=wwXlfr" target="_blank" rel="noopener noreferrer" class="btn btn-facebook" aria-label="Message HR Wreckers on Facebook (opens in new tab)">Message Us</a></p>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <i class="fas fa-clock"></i>
+                            <i class="fas fa-clock" aria-hidden="true"></i>
                             <div>
                                 <h3>Business Hours</h3>
-                                <p>Monday - Friday: 5am - 10pm</p>
-                                <p>Saturday: 5am - 7pm</p>
-                                <p>Sunday: 5am - 7pm </p>
+                                <div>
+                                    <p><time>Monday - Friday: 8am - 5pm</time></p>
+                                    <p><time>Saturday: 8am - 2pm</time></p>
+                                    <p><time>Sunday: Closed</time></p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -327,25 +350,25 @@
         </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
                     <h3>HR Wreckers</h3>
                     <p>Your Trusted Car Wreckers in SEQ</p>
                 </div>
-                <div class="footer-links">
+                <nav class="footer-links" aria-label="Footer Navigation">
                     <h4>Quick Links</h4>
-                    <ul>
+                    <ul role="list">
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#sell">Sell Your Car</a></li>
                         <li><a href="#buy">Buy Used Car Parts</a></li>
                         <li><a href="#contact">Contact Us</a></li>
                     </ul>
-                </div>
+                </nav>
                 <div class="footer-services">
                     <h4>Our Services</h4>
-                    <ul>
+                    <ul role="list">
                         <li>Car Wrecking</li>
                         <li>Car Removal</li>
                         <li>Used Car Parts</li>
@@ -354,26 +377,120 @@
                     </ul>
                 </div>
             </div>
-            <div class="social-links">
-                <a href="https://www.facebook.com/share/1FAy7PM4hp/?mibextid=wwXlfr" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <div class="social-links" role="navigation" aria-label="Social Media">
+                <a href="https://www.facebook.com/share/1FAy7PM4hp/?mibextid=wwXlfr" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Visit HR Wreckers on Facebook (opens in new tab)"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 HR Wreckers. All Rights Reserved.</p>
+                <p>&copy; 2023 HR Wreckers. All Rights Reserved.</p>
                 <p>Car Wreckers Brisbane | Car Wreckers Logan | Car Wreckers Gold Coast | Car Wreckers Sunshine Coast | Sell My Car Brisbane | Buy Cheap Car Parts Brisbane</p>
             </div>
         </div>
     </footer>
 
-    <!-- Load fonts & icons asynchronously -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&amp;display=swap"></noscript>
-
+    <!-- Optimized Font Loading -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 
-    <!-- Fallback loader for CSS -->
+    <!-- Non-critical CSS loaded asynchronously -->
+    <style>
+        /* Non-critical CSS - Optimized */
+        img{max-width:100%;height:auto;display:block}
+        ul{list-style:none;margin-bottom:1rem}
+        section{padding:4rem 0}
+        .rounded-img{border-radius:8px;box-shadow:0 4px 8px rgba(0,0,0,.1)}
+        .btn-primary:hover,.btn-primary:focus{background:#e6c300;transform:translateY(-2px)}
+        .btn-secondary:hover,.btn-secondary:focus{background:#144181;transform:translateY(-2px)}
+        .btn-facebook{background:#3b5998;color:#fff;padding:.5rem 1rem;font-size:.9rem}
+        .btn-facebook:hover,.btn-facebook:focus{background:#344e86}
+        .about{background:#fff}
+        .about-content{display:flex;gap:2rem;align-items:center}
+        .about-text,.about-image{flex:1}
+        .sell-section{background:#f1f7ff}
+        .buy-section{background:#fff}
+        .service-content{display:flex;gap:2rem;align-items:center}
+        .service-text,.service-image{flex:1}
+        .service-content.reverse{flex-direction:row-reverse}
+        .service-text h3{color:#1a52a0;margin-bottom:1.5rem}
+        .service-text ul li{margin-bottom:.5rem;position:relative;padding-left:1.5rem}
+        .service-text ul li:before{content:"✓";color:#f8d100;position:absolute;left:0}
+        .contact-section{background:#f1f7ff}
+        .contact-info-block{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
+        .contact-item{display:flex;align-items:flex-start;gap:1rem}
+        .contact-item i{font-size:1.5rem;color:#1a52a0;margin-top:.3rem}
+        .contact-item h3{margin-bottom:.5rem;color:#1a52a0}
+        .contact-item a:hover,.contact-item a:focus{color:#1a52a0;text-decoration:underline}
+        .testimonials-section{background:#f1f7ff}
+        .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
+        .testimonial{background:#fff;border-radius:8px;padding:1.5rem;box-shadow:0 4px 8px rgba(0,0,0,.1);display:flex;flex-direction:column;justify-content:space-between}
+        .testimonial-content{margin-bottom:1rem;font-style:italic}
+        .testimonial-author{display:flex;align-items:center;border-top:1px solid #eee;padding-top:1rem}
+        .testimonial-avatar{width:60px;height:60px;border-radius:50%;margin-right:1rem;object-fit:cover}
+        .author-info h4{margin-bottom:.3rem;color:#1a52a0}
+        .author-info p{font-size:.9rem;color:#666}
+        footer{background:#1a3a60;color:#fff;padding:3rem 0 1.5rem}
+        .footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;margin-bottom:2rem}
+        .footer-logo h3{font-size:1.5rem;margin-bottom:.5rem}
+        .footer-links h4,.footer-services h4{margin-bottom:1rem;color:#f8d100}
+        .footer-links ul li,.footer-services ul li{margin-bottom:.5rem}
+        .footer-links a:hover,.footer-links a:focus{color:#f8d100;text-decoration:underline}
+        .social-links{display:flex;justify-content:center;margin-bottom:1.5rem}
+        .social-icon{display:flex;justify-content:center;align-items:center;width:40px;height:40px;background:#f8d100;color:#1a3a60;border-radius:50%;margin:0 10px;font-size:1.2rem;transition:all .3s ease}
+        .social-icon:hover,.social-icon:focus{transform:translateY(-3px);background:#fff;outline:2px solid #f8d100}
+        .copyright{text-align:center;font-size:.9rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.1)}
+        address{font-style:normal}
+        @media (max-width:768px){
+            .about-content,.service-content,.service-content.reverse{flex-direction:column}
+            section{padding:3rem 0}
+            .testimonials-grid{grid-template-columns:1fr}
+        }
+        @media (max-width:480px){
+            h2{font-size:1.5rem}
+            .contact-info-block{grid-template-columns:1fr}
+            .footer-content{grid-template-columns:1fr;text-align:center}
+            .social-links{margin-top:1rem}
+        }
+        @media (prefers-reduced-motion: reduce){
+            *{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+        }
+    </style>
+
+    <!-- Minimal JavaScript for progressive enhancement -->
     <script>
-        !function(e){"use strict";var t=function(t,n,r){function o(e){if(i.body)return e();setTimeout(function(){o(e)})}var i=e.document,a=i.createElement("link"),l=r||"all";if(n){a.setAttribute("media","print");a.onload=function(){a.media=l}}else a.media=l;a.href=t,a.rel="stylesheet",o(function(){i.head.appendChild(a)})};"undefined"!=typeof module?module.exports=t:e.loadCSS=t}("undefined"!=typeof global?global:this);
+        // Lazy load images when they come into view
+        if ('IntersectionObserver' in window) {
+            const images = document.querySelectorAll('img[loading="lazy"]');
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.src;
+                        img.classList.remove('lazy');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+            images.forEach(img => imageObserver.observe(img));
+        }
+        
+        // Preload next section images on hover
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a[href^="#"]');
+            links.forEach(link => {
+                link.addEventListener('mouseenter', function() {
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        const images = targetSection.querySelectorAll('img[loading="lazy"]');
+                        images.forEach(img => {
+                            if (!img.src.includes('data:')) {
+                                const tempImg = new Image();
+                                tempImg.src = img.src;
+                            }
+                        });
+                    }
+                });
+            });
+        });
     </script>
 </body>
 </html>
