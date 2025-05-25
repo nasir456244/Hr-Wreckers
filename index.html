@@ -72,7 +72,7 @@
     
     <!-- Preload critical images -->
     <link rel="preload" as="image" href="/hero-background.webp" media="(min-width: 768px)">
-    <link rel="preload" as="image" href="/hero-background-mobile.webp" media="(max-width: 767px)">
+    <link rel="preload" as="image" href="/hero-background.webp" media="(max-width: 767px)">
     
     <!-- Critical CSS Inlined and Optimized -->
     <style>
@@ -388,9 +388,13 @@
     </footer>
 
     <!-- Optimized Font Loading -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+<noscript>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</noscript>
+    
     <!-- Non-critical CSS loaded asynchronously -->
     <style>
         /* Non-critical CSS - Optimized */
