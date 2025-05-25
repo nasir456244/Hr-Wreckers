@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <link rel="canonical" href="https://hrwreckers.com">
@@ -10,56 +8,56 @@
     <meta name="keywords" content="Car wreckers Brisbane, Car wreckers Logan, Car wreckers Gold Coast, Car wreckers Sunshine Coast, Sell my car Brisbane, Sell my car Logan, Sell my car Gold Coast, Sell my car Sunshine Coast, Buy cheap car parts Brisbane, Buy cheap car parts Logan, Buy cheap car parts Sunshine Coast, HR Wreckers Brisbane">
     <title>HR Wreckers | Car Wreckers & Used Car Parts Brisbane, Logan, Gold Coast, Sunshine Coast</title>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "HR Wreckers",
-  "image": "https://hrwreckers.com/og-image.png",
-  "telephone": "0437683165",
-  "email": "hrwrecking@gmail.com",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "123 Wrecker Lane",
-    "addressLocality": "Rocklea",
-    "addressRegion": "QLD",
-    "postalCode": "4106",
-    "addressCountry": "AU"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": -27.5111,
-    "longitude": 153.0287
-  },
-  "url": "https://hrwreckers.com",
-  "openingHoursSpecification": [
+    <script type="application/ld+json">
     {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "HR Wreckers",
+      "image": "https://hrwreckers.com/og-image.png",
+      "telephone": "0437683165",
+      "email": "hrwrecking@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Wrecker Lane",
+        "addressLocality": "Rocklea",
+        "addressRegion": "QLD",
+        "postalCode": "4106",
+        "addressCountry": "AU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -27.5111,
+        "longitude": 153.0287
+      },
+      "url": "https://hrwreckers.com",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "05:00",
+          "closes": "22:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "05:00",
+          "closes": "19:00"
+        }
       ],
-      "opens": "05:00",
-      "closes": "22:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Saturday",
-        "Sunday"
-      ],
-      "opens": "05:00",
-      "closes": "19:00"
+      "sameAs": [
+        "https://www.facebook.com/share/1FAy7PM4hp/?mibextid=wwXlfr"
+      ]
     }
-  ],
-  "sameAs": [
-    "https://www.facebook.com/share/1FAy7PM4hp/?mibextid=wwXlfr"
-  ]
-}
-</script>
+    </script>
 
     <!-- Resource Hints -->
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
@@ -71,9 +69,9 @@
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" as="style">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
     
-    <!-- Preload critical images -->
-    <link rel="preload" as="image" href="/hero-background.webp" media="(min-width: 768px)">
-    <link rel="preload" as="image" href="/hero-background-mobile.webp" media="(max-width: 767px)">
+    <!-- Preload critical images (always) -->
+    <link rel="preload" as="image" href="/hero-background.webp">
+    <link rel="preload" as="image" href="/hero-background-mobile.webp">
     
     <!-- Critical CSS Inlined and Optimized -->
     <style>
@@ -92,7 +90,20 @@
         .contact-info{display:flex;flex-direction:column}
         .contact-info a{color:#fff;margin-bottom:.5rem;font-weight:700;transition:color .3s ease}
         .contact-info a:hover{color:#f8d100}
-        .hero{background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url('/hero-background.webp') no-repeat center center/cover;color:#fff;padding:5rem 0;text-align:center;min-height:60vh;display:flex;align-items:center}
+
+        /* Fixed hero background shorthand parsing for all devices */
+        .hero {
+          background:
+            linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+            url('/hero-background.webp') no-repeat center center / cover;
+          color:#fff;
+          padding:5rem 0;
+          text-align:center;
+          min-height:60vh;
+          display:flex;
+          align-items:center;
+        }
+
         .hero-content{max-width:800px;margin:0 auto}
         .hero h1{font-size:2.5rem;color:#fff;margin-bottom:1rem}
         .hero p{font-size:1.2rem;margin-bottom:2rem}
@@ -102,8 +113,13 @@
         .btn-secondary{background:#1a52a0;color:#fff}
         .btn:focus{outline:2px solid #fff;outline-offset:2px}
         .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
         @media (max-width:767px){
-            .hero{background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url('/hero-background-mobile.webp') no-repeat center center/cover}
+            .hero {
+              background:
+                linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+                url('/hero-background-mobile.webp') no-repeat center center / cover;
+            }
             header .container{flex-direction:column;text-align:center}
             .logo{margin-bottom:1rem}
             .contact-info{flex-direction:column;align-items:center}
@@ -165,7 +181,7 @@
         </div>
     </section>
 
-    <main id="main-content">
+        <main id="main-content">
         <section id="about" class="about">
             <div class="container">
                 <h2>About HR Wreckers</h2>
